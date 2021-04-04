@@ -59,8 +59,8 @@ form.addEventListener('submit', function callback(e) {
                 ball++;
             }
         }
+        hint.innerHTML += input.value + ":  " + strike + "스트라이크 " + ball + "볼" + '<br/>';
         input.value = '';
         input.focus();
-        hint.textContent = strike + "스트라이크 " + ball + "볼";
     }
 } )
